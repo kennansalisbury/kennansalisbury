@@ -84,8 +84,9 @@ $header-font: 'Reenie Beanie', 'Montserrat', sans-serif;
 
 body {
     margin: 0;
-    background-image: url('../img/bg-img-wip-sm.jpg');
     background-color: #969FAE;
+    background-image: url('../img/bg-img-wip-sm.jpg');
+    @include background-img-cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
@@ -93,15 +94,16 @@ body {
     display: grid;
     grid-template-rows: 20vh 1fr 10vh;
     @include grid-template-columns(7);
-
-
-    @include background-img-cover;
     @include respond-to(medium-screen) {
         background-size: auto stretch;
     };
     @include respond-to(small-screen) {
         background-size: auto 100%;
     };
+    
+    h1 {
+        font-family: $header-font;
+    }
 }
 
 header {
@@ -110,7 +112,6 @@ header {
 
     h1 {
         color: white;
-        font-family: $header-font;
         font-size: 60px;
         margin: 0;
         @include respond-to(medium-screen) {font-size: 55px;}

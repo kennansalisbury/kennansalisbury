@@ -1,24 +1,26 @@
 body {
   margin: 0;
-  background-image: url("../img/bg-img-wip.jpg");
   background-color: #969FAE;
+  background-image: url("../img/bg-img-wip-sm.jpg");
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-rows: 20vh 1fr 10vh;
-  grid-template-columns: 4.7619vw 7.14286vw 1fr 1fr 1fr 1fr 7.14286vw;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  grid-template-columns: 4.7619vw 7.14286vw 1fr 1fr 1fr 1fr 7.14286vw; }
   @media only screen and (max-width: 752px) {
     body {
       background-size: auto stretch; } }
   @media only screen and (max-width: 334px) {
     body {
       background-size: auto 100%; } }
+  body h1 {
+    font-family: "Reenie Beanie", "Montserrat", sans-serif; }
 
 header {
   grid-area: 1 / 2 / 1 / 7;
@@ -27,7 +29,6 @@ header {
   justify-content: flex-end; }
   header h1 {
     color: white;
-    font-family: 'Reenie Beanie', 'Montserrat', sans-serif;
     font-size: 60px;
     margin: 0; }
     @media only screen and (max-width: 752px) {
@@ -35,7 +36,7 @@ header {
         font-size: 55px; } }
     @media only screen and (max-width: 334px) {
       header h1 {
-        font-size: 40px; } }
+        font-size: 45px; } }
 
 main {
   grid-area: 2 / 1 / 2 / 8;
@@ -47,7 +48,7 @@ main {
   main h1 {
     color: white;
     font-style: italic;
-    font-family: 'Reenie Beanie', 'Montserrat', sans-serif;
+    font-family: "Reenie Beanie", "Montserrat", sans-serif;
     font-size: 40px; }
   @media only screen and (max-width: 928px) {
     main {
