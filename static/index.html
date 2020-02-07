@@ -7,32 +7,100 @@
     <title>Kennan Salisbury</title>
     <link rel="preload" as="image" href="./img/bg-img-wip-sm.jpg">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <img src='./img/bg-img-wip-sm.jpg' style="display:none;">
     <header>
-        <h1>Kennan Salisbury</h1>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+        </nav>
     </header>
-    <main>
-        
-        <section id="under-construction">
-            <h1>portfolio under construction...</h1>
+    <main class = "container">
 
-            <a id="linkedin" href="http://www.linkedin.com/in/kennansalisbury" target="_blank">linkedin <span>: linkedin.com/in/kennansalisbury</span></a><br>
-            <a id="email" href="mailto:kennansalisbury@gmail.com">email <span>: kennansalisbury@gmail.com</span></a> <br>
-            <a id="phone" href="tel:19017864259">phone <span>: (901) 786-4259</span></a> <br>
-  
+        <div class ="home-page container">
+
+            <div class = "row">
+             <h1>Kennan Salisbury</h1>
+            </div >
+
             
-        </section>
-        <section id="good-things">
-            <h1>...good things to come</h1>
-        </section>
+            <div class = "row" id="contact-links">
+                <div>
+                    <a id="linkedin" href="http://www.linkedin.com/in/kennansalisbury" target="_blank">linkedin <span>: linkedin.com/in/kennansalisbury</span></a><br>
+                    <a id="email" href="mailto:kennansalisbury@gmail.com">email <span>: kennansalisbury@gmail.com</span></a> <br>
+                    <a id="phone" href="tel:19017864259">phone <span>: (901) 786-4259</span></a> <br>
+                    <a id="resume" href="./files/Kennan_Salisbury_Resume_2020.pdf" target="_blank">resume<span>: view</span></a> <br>
+                    <a id="work" href="#projects">work<span>: below</span></a>
+                </div>
+            </div> 
+        </div>
+
+        <div id="projects" class="container projects">
+
+
+        <div class = "row">
+            <div class = "col-sm text-right">
+                <h2>EXPRESS CHEF</h2>
+                <hr/>
+                <p>Node.js, Express, EJS, PostgreSQL, SQL/Sequelize, HTML/CSS (Bootstrap), and multiple API calls.</p>
+                <p>Search, save, create and categorize recipes in your own digital cookbook. Find and save ingredient substitutes, create shopping lists, and guide your meal planning with recommended recipes that maximize the ingredients already on your shopping list.</p>
+                <a href="https://cooking-kennan.herokuapp.com/">Live Demo</a>
+                <a href="https://github.com/kennansalisbury/recipes">Github Repo</a>
+            </div>
+
+            <div class = "col-sm">
+                <img src='./img/exp_chef.png' class="img-fluid"/>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div class = "row">
+            <div class = "col-sm text-right">
+                <h2>Project1</h2>
+                <hr/>
+                <p>Brownie toffee pudding chocolate cake liquorice candy pie tootsie roll. Fruitcake jelly beans dragée marshmallow. Dessert lemon drops gummies sweet roll. Dragée fruitcake candy. Tart halvah danish caramels soufflé macaroon chocolate cake gummi bears dessert. Ice cream candy canes pudding gingerbread sweet roll bear claw.</p>
+            </div>
+
+            <div class = "col-sm">
+                <h2>IMAGE</h2>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-6 text-right">
+                <h2>Project1</h2>
+                <hr/>
+                <p>Brownie toffee pudding chocolate cake liquorice candy pie tootsie roll. Fruitcake jelly beans dragée marshmallow. Dessert lemon drops gummies sweet roll. Dragée fruitcake candy. Tart halvah danish caramels soufflé macaroon chocolate cake gummi bears dessert. Ice cream candy canes pudding gingerbread sweet roll bear claw.</p>
+            </div>
+
+            <div class = "col-sm">
+                <h2>IMAGE</h2>
+            </div>
+        </div>  
+
+        </div>
+
+        <div class="container about">
+            <h1>About Kennan</h1>
+            <p>Brownie toffee pudding chocolate cake liquorice candy pie tootsie roll. Fruitcake jelly beans dragée marshmallow. Dessert lemon drops gummies sweet roll. Dragée fruitcake candy. Tart halvah danish caramels soufflé macaroon chocolate cake gummi bears dessert. Ice cream candy canes pudding gingerbread sweet roll bear claw.</p>
+        </div>
 
     </main>
     <footer>
         <small>Photo by Stéphane Mingot on Unsplash</small>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
 
