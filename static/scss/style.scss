@@ -33,7 +33,6 @@ $header-font: 'Reenie Beanie', 'Montserrat', sans-serif;
     grid-template-columns: set-col($num-of-columns)
 }
 
-
 @mixin respond-to($media) {
     @if $media == small-screen {
         @media only screen and (max-width: $media-break-small) { @content; }
@@ -49,10 +48,12 @@ $header-font: 'Reenie Beanie', 'Montserrat', sans-serif;
 @mixin show-contact-links($selector) {
 
     ##{$selector} {
-        padding: 10px;
+        // padding: 10px;
         &:hover {
             span {
                 display: inline-block;
+                color: black;
+                text-decoration: none;
             }
         }
 
@@ -61,7 +62,9 @@ $header-font: 'Reenie Beanie', 'Montserrat', sans-serif;
             text-decoration: underline;
             &:hover {
                 span {
-                    display: none;
+                    display: block;
+                    color: black;
+                    text-decoration: none;
                 }
             }
         }
@@ -73,7 +76,9 @@ $header-font: 'Reenie Beanie', 'Montserrat', sans-serif;
     flex-direction: column;
     justify-content: flex-end;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -83,7 +88,7 @@ body {
     display: grid;
     // grid-template-rows: 20% 30% 30% 10%;
     // @include grid-template-columns(7);
-    
+   
     h1 {
         font-family: $header-font;
     }
@@ -123,7 +128,8 @@ main {
         color: black;
         font-style: italic;
         font-family: $header-font;
-        font-size: 60px;
+        font-size: 80px;
+        margin-bottom: 0;
     }
     
     // @media only screen and (max-width: 928px) {
@@ -131,8 +137,42 @@ main {
     // }
 
     .home-page {
-        margin: 200px auto;
-        width: 40vw;
+        width: 100vw; 
+        min-height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        // h4 {
+        //     background: #21252A;
+        //     color: white;
+        // }
+
+        .line {
+            height: .1em;
+            width: 30vw;
+            background: black;
+            margin: 10px auto;
+        }
+
+        h2 {
+            margin-bottom: 1em;
+        }
+    }
+
+    .main-link {
+        text-decoration: none;
+        color: black;
+         &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+
+    .page-links {
+        font-size: 30px;
+        color: black;
     }
     
     #contact-links {
@@ -140,59 +180,84 @@ main {
         // @media only screen and (max-width: 928px) {
         //     grid-column: 3 / 6
         // }
-        @include show-contact-links(linkedin);
-        @include show-contact-links(phone);
-        @include show-contact-links(email);
-        @include show-contact-links(resume);
-        @include show-contact-links(work)
+        // @include show-contact-links(linkedin);
+        // @include show-contact-links(phone);
+        // @include show-contact-links(email);
+        // @include show-contact-links(resume);
+        // @include show-contact-links(work)
         
         // h1 {
         //     @include respond-to(medium-screen) {font-size: 35px;}
         //     @include respond-to(small-screen) {font-size: 25px;}
         // }
      
-        span {
-            display: none;
-        }
+        // span {
+        //     display: none;
+        // }
 
         a {
             display: inline-block;
             text-decoration: none;
             color: black;
-            &:hover {
-                color: black;
-            }
-            @include respond-to(medium-screen){font-size: 15px;}
-            @include respond-to(small-screen) {
-                font-size: 12px;
-            }
-        }
-    }
-
-    .projects {
-        margin-bottom: 100px;
-    }
-    
-    #good-things {
-        // grid-column: 5 / 7;
-        // @media only screen and (max-width: 928px) {
-        //     grid-column: 6 / 8
-        // }
-
-        h1 {
-            @include respond-to(medium-screen) {
-                font-size: 35px;
-            }
+            padding: 5px;
+            font-size: 60px;
+            // @include respond-to(medium-screen){font-size: 50px;}
             @include respond-to(small-screen) {
                 font-size: 20px;
-            }  
-            @media only screen and (max-width: 826px) {
-               font-size: 35px;
             }
         }
+    }
+
+    #projects {
+        margin-bottom: 100px;
+        min-height: 120vh;
+        
+        .project {
+
+            @include respond-to(medium-screen) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            hr {
+                margin-top: 0;
+            }
+            #see-more {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .chef-img {
+                img {
+                    min-height: 20vh;
+                }
+                
+            }
+        }
+    }
+
+    #about {
+        min-height: 100vh;
+    }
+    
+    // #good-things {
+    //     // grid-column: 5 / 7;
+    //     // @media only screen and (max-width: 928px) {
+    //     //     grid-column: 6 / 8
+    //     // }
+
+    //     h1 {
+    //         @include respond-to(medium-screen) {
+    //             font-size: 35px;
+    //         }
+    //         @include respond-to(small-screen) {
+    //             font-size: 20px;
+    //         }  
+    //         @media only screen and (max-width: 826px) {
+    //            font-size: 35px;
+    //         }
+    //     }
         // @include flex-column-justify-end;
         // align-items: center;
-    }
+    // }
 }
 
 footer {

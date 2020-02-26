@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   background-color: white;
@@ -32,85 +35,56 @@ main {
     color: black;
     font-style: italic;
     font-family: "Reenie Beanie", "Montserrat", sans-serif;
-    font-size: 60px; }
+    font-size: 80px;
+    margin-bottom: 0; }
   main .home-page {
-    margin: 200px auto;
-    width: 40vw; }
-  main #contact-links #linkedin {
-    padding: 10px; }
-    main #contact-links #linkedin:hover span {
-      display: inline-block; }
-    @media only screen and (max-width: 675px) {
-      main #contact-links #linkedin {
-        padding: 0px;
-        text-decoration: underline; }
-        main #contact-links #linkedin:hover span {
-          display: none; } }
-  main #contact-links #phone {
-    padding: 10px; }
-    main #contact-links #phone:hover span {
-      display: inline-block; }
-    @media only screen and (max-width: 675px) {
-      main #contact-links #phone {
-        padding: 0px;
-        text-decoration: underline; }
-        main #contact-links #phone:hover span {
-          display: none; } }
-  main #contact-links #email {
-    padding: 10px; }
-    main #contact-links #email:hover span {
-      display: inline-block; }
-    @media only screen and (max-width: 675px) {
-      main #contact-links #email {
-        padding: 0px;
-        text-decoration: underline; }
-        main #contact-links #email:hover span {
-          display: none; } }
-  main #contact-links #resume {
-    padding: 10px; }
-    main #contact-links #resume:hover span {
-      display: inline-block; }
-    @media only screen and (max-width: 675px) {
-      main #contact-links #resume {
-        padding: 0px;
-        text-decoration: underline; }
-        main #contact-links #resume:hover span {
-          display: none; } }
-  main #contact-links #work {
-    padding: 10px; }
-    main #contact-links #work:hover span {
-      display: inline-block; }
-    @media only screen and (max-width: 675px) {
-      main #contact-links #work {
-        padding: 0px;
-        text-decoration: underline; }
-        main #contact-links #work:hover span {
-          display: none; } }
-  main #contact-links span {
-    display: none; }
+    width: 100vw;
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .home-page .line {
+      height: .1em;
+      width: 30vw;
+      background: black;
+      margin: 10px auto; }
+    main .home-page h2 {
+      margin-bottom: 1em; }
+  main .main-link {
+    text-decoration: none;
+    color: black; }
+    main .main-link:hover {
+      color: black;
+      text-decoration: underline; }
+  main .page-links {
+    font-size: 30px;
+    color: black; }
   main #contact-links a {
     display: inline-block;
     text-decoration: none;
-    color: black; }
-    main #contact-links a:hover {
-      color: black; }
-    @media only screen and (max-width: 752px) {
-      main #contact-links a {
-        font-size: 15px; } }
+    color: black;
+    padding: 5px;
+    font-size: 60px; }
     @media only screen and (max-width: 334px) {
       main #contact-links a {
-        font-size: 12px; } }
-  main .projects {
-    margin-bottom: 100px; }
-  @media only screen and (max-width: 752px) {
-    main #good-things h1 {
-      font-size: 35px; } }
-  @media only screen and (max-width: 334px) {
-    main #good-things h1 {
-      font-size: 20px; } }
-  @media only screen and (max-width: 826px) {
-    main #good-things h1 {
-      font-size: 35px; } }
+        font-size: 20px; } }
+  main #projects {
+    margin-bottom: 100px;
+    min-height: 120vh; }
+    @media only screen and (max-width: 752px) {
+      main #projects .project {
+        display: flex;
+        flex-direction: column-reverse; } }
+    main #projects .project hr {
+      margin-top: 0; }
+    main #projects .project #see-more {
+      text-decoration: underline;
+      cursor: pointer; }
+    main #projects .project .chef-img img {
+      min-height: 20vh; }
+  main #about {
+    min-height: 100vh; }
 
 footer {
   color: white;
