@@ -160,7 +160,12 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 90vh;
+        min-height: 100vh;
+
+        @include respond-to(medium-screen) {
+            min-height: 85vh;
+        }
+    
         
         // h4 {
         //     background: #21252A;

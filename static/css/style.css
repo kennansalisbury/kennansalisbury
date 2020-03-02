@@ -53,7 +53,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 85vh; }
+    min-height: 100vh; }
+    @media only screen and (max-width: 752px) {
+      main .home-page {
+        min-height: 85vh; } }
     main .home-page .line {
       height: .1em;
       width: 30vw;
