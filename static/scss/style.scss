@@ -3,7 +3,6 @@ $media-break-medium: 752px;
 $media-break-small: 415px;
 $header-font: 'Reenie Beanie', 'Montserrat', sans-serif;
 
-
 @function set-col($num-of-columns) {
     $even-col-w: 100/$num-of-columns;
     $custom-col-template: ();
