@@ -20,6 +20,6 @@
   "homepage": "https://github.com/kennansalisbury/kennansalisbury#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
